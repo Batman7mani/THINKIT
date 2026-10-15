@@ -22,9 +22,32 @@ This project was created to:
 
 ## Technologies Used
 
-- **HTML** – Structure and content layout.
-- **CSS** – Styling, responsiveness, and layout animations.
-- **JavaScript** – Interactivity, logic, speech synthesis, progress tracking.
+- **React 19** – Component-based UI; each tool is its own page component.
+- **React Router** – Client-side navigation between the tools (hash routing for GitHub Pages).
+- **HTML** – Page structure (JSX) and the Vite entry page.
+- **CSS** – Styling, responsiveness, and layout animations (one stylesheet per tool).
+- **JavaScript** – Interactivity, logic, speech synthesis (Web Speech API), progress tracking.
+- **Vite** – Dev server and production build.
+
+## Run It Locally
+
+```bash
+npm install
+npm run dev      # open the printed localhost URL
+npm run build    # production build in dist/
+npm run deploy   # build and publish dist/ to the gh-pages branch (GitHub Pages)
+```
+
+## Project Structure
+
+```
+index.html            Vite entry page
+src/main.jsx          Router: /, /text-to-speech, /phonetic, /worksheets, /typing, /quiz
+src/usePage.js        Loads the active page's stylesheet and sets the tab title
+src/pages/*.jsx       One React component per tool
+src/styles/*.css      Original THINKIT stylesheets
+public/               Images, mascot GIFs, sounds and worksheet PDFs
+```
 
 ## What I Learned
 
@@ -39,13 +62,13 @@ This project was created to:
 - Ensuring cross-browser compatibility with the Web Speech API.
 - Managing input validation and feedback without overwhelming the user.
 - Designing a UI that’s both functional and visually simple for early learners.
-- Making the application mobile-friendly without using frameworks.
+- Making the application mobile-friendly, then migrating it to React without losing the original look.
 - Handling edge cases like empty inputs and voice mismatches.
 
 ## Live Project
 
-You can view and interact with the live version of THINKIT here:  
-**[THINK](https://thinkpro.netlify.app/)**
+- GitHub Pages: **https://batman7mani.github.io/thinkit/**
+- Netlify: **[THINK](https://thinkpro.netlify.app/)**
 
 ## Future Improvements
 

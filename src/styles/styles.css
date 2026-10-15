@@ -64,7 +64,6 @@ body {
 
 /* Banner Section */
 .banner-section {
-  background-image: url('your-banner.png'); /* Replace with your actual image name */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -3,93 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="THINKIT — interactive reading and learning tools for children with dyslexia." />
+  <link rel="icon" type="image/png" href="./logo.png" />
   <title>THINKIT - A Place Where Every Kid Evolves</title>
-  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Login Modal Popup -->
-<div class="login-modal hidden" id="loginModal">
-  <div class="login-popup">
-    <h2>👋 Hello New Thinker!</h2>
-    <img src="bear-hungry.gif" alt="Bear Mascot" class="b-mascot" />
-    <p>Start your journey by filling the form below:</p>
-    <form id="thinkerForm">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <input type="date" required />
-      <label class="consent">
-        <input type="checkbox" id="consentCheck" /> I have parent/guardian consent.
-      </label>
-      <button type="submit" id="submitBtn" disabled>🚀 Let's Begin!</button>
-    </form>
-    <button class="close-btn" onclick="toggleLogin()">✖</button>
-  </div>
-</div>
-
-
-  <!-- Header Section -->
-  <header class="header main-header">
-    <div class="header-left">
-      <img src="logo.png" alt="ThinkIt Logo" class="logo" />
-      <div>
-        <h1 class="project-name">THINKIT</h1>
-        <p class="tagline">A place where every kid evolves</p>
-      </div>
-    </div>
-    <div class="header-right">
-      <button class="login-btn" onclick="toggleLogin()">Login</button>
-    </div>
-    <div class="banner">
-  </header>
-
-  <div class="banner-section">
-  <h1>Empowering Young Minds to Read, Learn, and Grow</h1>
-  <p>Interactive tools built with love for children with dyslexia</p>
-</div>
-
-  <hr class="divider" />
-
-  <!-- Search Bar -->
-  <section class="search-area">
-    <input type="text" class="search-input" placeholder="Think with me..." />
-    <button class="search-btn">🔍</button>
-  </section>
-
-  <!-- Feature Placeholder Sections -->
-  <main class="features">
-    <a href="text-to-speech.html" class="feature">Text-to-Speech + Highlighting</a>
-    <a href="phonetic.html" class="feature">Phonetic Segmentation</a>
-    <a href="worksheets.html" class="feature">Downloadable Worksheets</a>
-    <a href="typing.html" class="feature">Typing Practice</a>
-    <a href="quiz.html" class="feature">Daily THINKIT QUIZ</a>
-  </main>
-
-
-
-  <!-- About Us -->
-  <footer class="about">
-    <h2>About Us</h2>
-    <p>
-      THINKIT is an inclusive learning platform designed to support children with dyslexia and other learning needs. Our goal is to build a space where kids can grow through personalized, multi-sensory, and accessible education tools.
-    </p>
-  </footer>
-
-  <footer class="thinkit-footer">
-  <div class="footer-content">
-    <div class="footer-social">
-      <a href="#"><img src="download.webp" alt="LinkedIn" /></a>
-      <a href="#"><img src="OIP (1).webp" alt="Twitter" /></a>
-      <a href="#"><img src="OIP.webp" alt="YouTube" /></a>
-    </div>
-    <p>©2025 THINKIT. Built with ❤️ for smart kids worldwide.</p>
-    <div class="footer-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
-    </div>
-  </div>
-</footer>
-
-
-<script src="script.js"></script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
